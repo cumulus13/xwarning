@@ -5,6 +5,7 @@ from rich.text import Text
 import warnings
 import os
 from datetime import datetime
+import sys
 
 # Internal class
 class WarningPrinter:
