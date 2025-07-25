@@ -88,7 +88,7 @@ pip install xwarning
 ⚠️ USER: This is a user warning!
 ```
 
-[![Example Outputs](https://github.com/cumulus13/xwarning/raw/refs/heads/master/example_usage.gif)](https://github.com/cumulus13/xwarning/raw/refs/heads/master/example_outputs.png)
+[![Example Outputs](https://github.com/cumulus13/xwarning/raw/refs/heads/master/example_outputs.png)](https://github.com/cumulus13/xwarning/raw/refs/heads/master/example_outputs.png)
 
 
 ## License
