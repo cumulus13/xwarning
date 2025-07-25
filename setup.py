@@ -6,7 +6,7 @@ with open("__version__.py") as f:
 
 setup(
     name="xwarning",
-    version=version["__version__"],
+    version=version["version"],
     author="Hadi Cahyadi",
     description="Enhanced warning output using Rich with icons and colors.",
     long_description=open("README.md").read(),
