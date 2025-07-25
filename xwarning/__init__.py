@@ -1,1 +1,1 @@
-from .xwarning import warn, configure  # optional shortcut exports
+from .xwarning import warn, warning, configure  # optional shortcut exports

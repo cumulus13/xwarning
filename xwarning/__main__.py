@@ -4,7 +4,7 @@ if __name__ == '__main__':
 	import sys
     
    
-    # Simple usage
+    # Simple usage you can use 'warn' similar as 'warning'
     warn("This is deprecated warning !", type="deprecated")
     print("\n")
     warn("This is user warning !", type="user")

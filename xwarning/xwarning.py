@@ -136,13 +136,16 @@ _printer = WarningPrinter()
 def warn(message, type="user"):
     _printer.warn(message, type)
 
+def warning(message, type="user"):
+    _printer.warn(message, type)
+
 def configure(**kwargs):
     _printer.configure(**kwargs)
 
 if __name__ == '__main__':
     import sys
 
-    # Simple usage
+    # Simple usage you can use 'warn' similar as 'warning'
     warn("This is deprecated warning !", type="deprecated")
     warn("This is user warning !", type="user")
     warn("This is future warning !", type="future")

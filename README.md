@@ -33,9 +33,9 @@ pip install xwarning
 ## Usage
 
 ```python
->> from xwarning import warn, configure
+>> from xwarning import warn, warning, configure
 
-# Simple usage
+# Simple usage you can use 'warn' similar as 'warning'
 >> warn("This is deprecated warning !", type="deprecated")
 
 >> warn("This is user warning !", type="user")
