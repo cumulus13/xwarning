@@ -144,14 +144,11 @@ class FallbackConsole:
         if MAKE_COLORS_AVAILABLE:
             print(text_obj)
         elif hasattr(text_obj, '__str__'):
-            # print("METHOD [1]")
             print(str(text_obj))
         elif hasattr(text_obj, 'plain'):
-            # print("METHOD [2]")
             # If it's a text object with plain text
             print(text_obj.plain)
         else:
-            # print("METHOD [3]")
             print(text_obj)
 
 class FallbackText:
@@ -671,7 +668,7 @@ class WarningPrinter:
         if RICH_AVAILABLE:
             output = Text()
             if icon:
-                output.append(f"{icon} ", style=style1)
+                output.append(f"{icon} ")
             output.append(f"{label}:", style=style1)
             output.append(" " + str(message), style=style2)
             if self.show_line:

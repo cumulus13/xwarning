@@ -8,16 +8,21 @@ setup(
     name="xwarning",
     version=version["version"],
     author="Hadi Cahyadi",
-    description="Enhanced warning output using Rich with icons and colors.",
+    description="Enhanced Python warnings with beautiful, color-coded output with icons and colors.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/cumulus13/xwarning",
     license="MIT",
     packages=find_packages(),
     include_package_data=True,
-    install_requires=[
-        "rich>=13.0.0",
-    ],
+    # install_requires=[
+    #     "rich>=13.0.0",
+    # ],
+    entry_points={
+        'console_scripts': [
+            'xwarning=xwarning.__main__:main',
+        ],
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
