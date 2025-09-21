@@ -1,4 +1,5 @@
-from . xwarning import warn, configure, WarningPrinter
+from . xwarning import warn, configure, WarningPrinter, get_backend_info
+
 import sys
 
 def main():
@@ -48,11 +49,11 @@ def main():
 	warn("This is runtime warning with explicit category parameter!", category=RuntimeWarning)
 
 	print("\n=== Testing alias usage ===")
-	xwarnings.warn("Testing xwarnings.warn with string type", type="user")
-	xwarnings.warn("Testing xwarnings.warn with Warning class", UserWarning)
+	warn("Testing xwarnings.warn with string type", type="user")
+	warn("Testing xwarnings.warn with Warning class", UserWarning)
 
-	xwarning.warn("Testing xwarning.warn with string type", type="runtime")
-	xwarning.warn("Testing xwarning.warn with Warning class", RuntimeWarning)
+	warn("Testing xwarning.warn with string type", type="runtime")
+	warn("Testing xwarning.warn with Warning class", RuntimeWarning)
 
 	print("\n=== Testing configuration changes ===")
 	print("Disabling icons...")

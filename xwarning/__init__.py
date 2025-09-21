@@ -11,16 +11,16 @@ from .xwarning import (
 )
 
 # Export warning classes for direct use
-from warnings import (
-    Warning,
-    UserWarning,
-    DeprecationWarning,
-    FutureWarning,
-    RuntimeWarning,
-    SyntaxWarning,
-    ImportWarning,
-    UnicodeWarning,
-)
+# from warnings import (
+#     Warning,
+#     UserWarning,
+#     DeprecationWarning,
+#     FutureWarning,
+#     RuntimeWarning,
+#     SyntaxWarning,
+#     ImportWarning,
+#     UnicodeWarning,
+# )
 
 # Make it available at package level
 __all__ = [
